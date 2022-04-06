@@ -1,0 +1,11 @@
+section {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    .content {
+        width: 600px;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+    }
+}
