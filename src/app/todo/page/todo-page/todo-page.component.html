@@ -1,6 +1,12 @@
 <section>
     <div class="content">
-        Conteneur de l'application
+        <h1>
+            Todo List
+        </h1>
+        <hr>
+        <div *ngFor="let todo of todos; let i = index">
+            <span>{{ todo.content }}</span>
+        </div>
     </div>
 </section>
 
