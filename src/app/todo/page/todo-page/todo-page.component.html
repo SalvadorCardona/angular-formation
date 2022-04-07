@@ -4,8 +4,12 @@
             Todo List
         </h1>
         <hr>
+        <div>
+            <input type="text" [(ngModel)]="currentTodo"> <button (click)="addTodo(currentTodo)">Ajouter</button>
+        </div>
+        <hr>
         <div *ngFor="let todo of todos; let i = index">
-            <span>{{ todo.content }}</span>
+           <input type="text" [(ngModel)]="todos[i].content" [value]="todo.content"> <button (click)="removeTodo(i)">X</button>
         </div>
     </div>
 </section>

@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodoPageComponent } from './page/todo-page/todo-page.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [TodoPageComponent],
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
 })
 export class TodoModule {}

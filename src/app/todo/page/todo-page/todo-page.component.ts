@@ -13,6 +13,16 @@ export class TodoPageComponent implements OnInit {
     { content: 'Tache 3' },
   ];
 
+  currentTodo: string = '';
+
+  addTodo(content: string): void {
+    this.todos.push({ content: content });
+  }
+
+  removeTodo(index: number): void {
+    this.todos.splice(index, 1);
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
