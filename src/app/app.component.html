@@ -1,2 +1,17 @@
+<nav>
+    <ul>
+        <li>
+            <a [routerLink]="['/recette']">
+                Recette Module
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/todo']">
+                Todo Module
+            </a>
+        </li>
+    </ul>
+</nav>
+
 <!-- Affiche un composant selon l'url, dans notre avec l'url todo on affiche le Todo-page.component -->
 <router-outlet></router-outlet>
