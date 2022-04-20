@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DisneyModule } from './disney/disney.module';
+import { ProduitModule } from './produit/produit.module';
+
 import { RecetteModule } from './recette/recette.module';
 import { TodoModule } from './todo/todo.module';
 
@@ -15,6 +17,7 @@ import { TodoModule } from './todo/todo.module';
     TodoModule,
     RecetteModule,
     DisneyModule,
+    ProduitModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
