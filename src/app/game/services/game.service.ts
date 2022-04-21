@@ -82,11 +82,13 @@ export class GameService {
       .then((response) => response.json())
       .then((data) => {
         this.stores = data;
+        console.log(data);
+
         return data;
       });
   }
 
-  // Change la page de recherche 
+  // Change la page de recherche
   public nextDealPage(): void {
     if (this.filterDeal.pageNumber >= this.totalPageCount) return;
 
@@ -121,7 +123,7 @@ export class GameService {
       });
   }
 
-  // ne pas chercher à comprendre 
+  // ne pas chercher à comprendre
   private objToQueryString(obj: FilterDeal): string {
     const keyValuePairs = [];
     for (let i = 0; i < Object.keys(obj).length; i += 1) {

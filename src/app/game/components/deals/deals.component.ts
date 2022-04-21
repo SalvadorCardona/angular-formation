@@ -11,7 +11,32 @@ export class DealsComponent implements OnInit {
   constructor(
     public gameService: GameService,
     public basketService: BasketService
-  ) {}
+  ) { }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   titleSearch: string = '';
   ngOnInit(): void {}
 

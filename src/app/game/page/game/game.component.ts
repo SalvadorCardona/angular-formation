@@ -10,8 +10,7 @@ import { GameService } from '../../services/game.service';
 })
 export class GameComponent implements OnInit {
   constructor(
-    public gameService: GameService,
-    public basketService: BasketService
+    public gameService: GameService
   ) {}
 
   ngOnInit(): void {
