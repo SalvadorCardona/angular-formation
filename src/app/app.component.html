@@ -1,28 +1,37 @@
 <!-- src/app/app.component.html -->
-<nav>
-    <ul>
-        <li>
-            <a [routerLink]="['/recette']">
-                Recette Module
-            </a>
+<div class="row">
+  <div class="col-2">
+    <nav class="p-5">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/recette']">
+            🗒️ Recette Module
+          </a>
         </li>
-        <li>
-            <a [routerLink]="['/todo']">
-                Todo Module
-            </a>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/todo']"> 📖 Todo Module </a>
         </li>
-        <li>
-            <a [routerLink]="['/compteur']">
-                Compteur Module
-            </a>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/compteur']">
+            ⏱️ Compteur Module
+          </a>
         </li>
-        <li>
-            <a [routerLink]="['/dysney']">
-                Disney personnage
-            </a>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/dysney']">
+            🐈 Disney personnage
+          </a>
         </li>
-    </ul>
-</nav>
-
-<!-- Affiche un composant selon l'url, dans notre avec l'url todo on affiche le Todo-page.component -->
-<router-outlet></router-outlet>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/add-man']"> 👨 Add Man </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/game']"> 🎮 Game </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="col-10">
+    <!-- Affiche un composant selon l'url, dans notre avec l'url todo on affiche le Todo-page.component -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

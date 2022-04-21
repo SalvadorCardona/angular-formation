@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AddManModule } from './add-man/add-man.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DisneyModule } from './disney/disney.module';
-import { ProduitModule } from './produit/produit.module';
+import { GameModule } from './game/game.module';
 
 import { RecetteModule } from './recette/recette.module';
 import { TodoModule } from './todo/todo.module';
@@ -17,7 +18,8 @@ import { TodoModule } from './todo/todo.module';
     TodoModule,
     RecetteModule,
     DisneyModule,
-    ProduitModule,
+    AddManModule,
+    GameModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

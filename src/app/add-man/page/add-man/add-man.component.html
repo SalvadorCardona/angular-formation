@@ -1,0 +1,19 @@
+<section class="p-5 bg-white">
+  <h1>Ajouter des hommes</h1>
+  <div class="d-flex">
+    <div *ngFor="let man of manList; let i = index">
+      <button class="btn btn-primary m-2" (click)="addMan(man)">
+        Ajouter <span class="icon fs-5">{{ man.icon }}</span>
+      </button>
+    </div>
+  </div>
+
+  <h1>Votre liste d'humain</h1>
+  <div class="d-flex">
+    <div *ngFor="let man of mans; let i = index">
+      <button class="btn btn-danger m-2" (click)="removeMan(i)">
+        Supprimer <span class="icon fs-5">{{ man.icon }}</span>
+      </button>
+    </div>
+  </div>
+</section>
